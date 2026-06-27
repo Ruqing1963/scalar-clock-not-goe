@@ -1,0 +1,309 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{placeins}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\setlength{\emergencystretch}{3em}
+\newcommand{\rr}{\langle r\rangle}
+
+\title{\bfseries Narrow scalar clocks, not level repulsion:\\
+a fourth spurious-GOE hazard and a re-audit of metallogenic timing statistics}
+\author{Ruqing Chen\\[2pt]
+\small GUT Geoservice Inc., Montr\'eal, Qu\'ebec, Canada\\
+\small \texttt{ruqing.chen@gutgeoservice.com}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+A companion note documented three ways geophysical data fabricate Gaussian-ensemble
+(GOE) ``level repulsion'' in the consecutive spacing ratio $\rr$ --- declustering,
+seasonal gating, and the Wishart null. Here we add a fourth, and use it to
+re-audit a published claim of temporal level repulsion in ore-forming systems. A
+charge-and-release reservoir is a classical relaxation oscillator, i.e.\ a renewal
+process; its inter-event intervals are independent, so it has no spectral rigidity
+and cannot produce genuine level repulsion. Yet a renewal clock with a narrow
+interval distribution reproduces \emph{any} value of $\rr$ --- we show it sweeps
+the whole range from Poisson ($0.386$) through GOE ($0.531$) and GUE ($0.603$) up
+to $0.88$ purely as a function of the interval coefficient of variation (CV). The
+value of $\rr$ therefore carries no evidence of repulsion by itself. Re-analysing
+the orogenic-gold geochronology of a published four-province study, we exactly
+reproduce its reported $\rr=0.678$ and show that (i) it measures within-deposit
+scatter among geochronometers, not province-scale timing; (ii) it is reproduced
+by a zero-repulsion scalar clock of CV~$=0.38$; (iii) its apparent rigidity
+(shuffle deficit $-0.031$) is an artifact of within-deposit normalisation, which a
+zero-repulsion null reproduces identically; and (iv) it is unresolvable, since
+jittering the ages within their stated $\pm5$~Myr uncertainties moves $\rr$ across
+the entire Poisson-to-GUE range. We restate the program's organising principle
+accordingly: a single isolated relaxation-oscillator source yields a scalar
+renewal clock, not GOE level repulsion, while the superposition of many sources
+yields Poisson; genuine Wigner--Dyson statistics require a chaotic, strongly-mixed
+spectrum that a low-dimensional dissipative reservoir does not possess.
+\end{abstract}
+
+\section{Introduction}
+
+The consecutive spacing ratio $\rr=\langle\min(s_i,s_{i+1})/\max(s_i,s_{i+1})\rangle$
+\citep{oganesyan2007,atas2013} is an attractive, unfolding-free test for order in
+a sequence, with reference values $0.386$ (Poisson), $0.531$ (GOE) and $0.603$
+(GUE). A companion note \citep{chen2026spurious} showed that three mundane data
+operations push $\rr$ to GOE-like values without any underlying repulsion:
+minimum-separation declustering, seasonal gating of event times, and the
+finite-sampling (Wishart) structure of correlation matrices. The unifying remedy
+was the permutation (shuffle) test together with the coefficient of variation and
+an appropriate null.
+
+This note adds a fourth hazard that is both more elementary and, in geoscience
+timing studies, more consequential: a \emph{narrow scalar clock}. Many proposed
+``single-source'' Earth-system rhythms --- volcanic recharge, jökulhlaup
+charge-and-release, ore-fluid focusing --- are physically relaxation oscillators:
+a reservoir fills and discharges at a threshold, then refills. Such a process is a
+\emph{renewal} process with independent inter-event intervals. It has, by
+construction, no sequential correlation and no spectral rigidity, and so cannot
+generate Wigner--Dyson level repulsion. Yet, as we show, a renewal clock with a
+sufficiently narrow interval distribution reproduces any value of $\rr$, including
+the GOE and GUE values, purely from its marginal. A reported $\rr\approx0.53$ is
+therefore not evidence of level repulsion.
+
+We make the point concrete by re-auditing a published study that interpreted
+$\rr$-values of $0.57$--$0.71$ across four metallogenic provinces --- including a
+non-magmatic orogenic-gold case --- as GOE/GUE ``level repulsion'' reflecting a
+charge-and-release memory \citep{chen2026metallogeny}. The same program's spatial
+companion \citep{chen2026sigma} had already cautioned that declustering fabricates
+GOE; we show the temporal claim falls to the scalar-clock hazard and to the age
+uncertainties, and we restate the organising principle so that the surviving,
+defensible content is cleanly separated from the part that does not hold.
+
+\section{The fourth hazard: a narrow scalar clock reproduces any \texorpdfstring{$\rr$}{r}}
+
+\paragraph{Mechanism.} Model a charge-and-release source as a gamma renewal
+process with mean-one intervals and coefficient of variation CV (smaller CV $=$
+more regular firing). Figure~\ref{fig:mech}a shows $\rr$ as a function of CV: it
+rises smoothly from the Poisson value at CV~$\approx1$ through GOE at
+CV~$\approx0.52$ and GUE at CV~$\approx0.45$ to $0.88$ at CV~$=0.13$. A renewal
+clock --- with no level repulsion whatsoever --- thus reproduces the entire range
+of ``RMT'' $\rr$-values. The value of $\rr$ alone is uninformative about
+repulsion; it is a one-to-one re-encoding of the interval CV.
+
+\paragraph{Why this is not GOE.} Genuine Wigner--Dyson statistics arise from the
+spectra of chaotic, strongly-mixed systems with the appropriate symmetry
+\citep{bohigas1984}; integrable or near-integrable dynamics give Poisson
+statistics \citep{berry1977}. A classical relaxation oscillator is the integrable
+extreme --- a limit cycle --- and its event sequence is a renewal process, not a
+Hamiltonian spectrum. It has no mechanism for level repulsion. The two genuine
+fingerprints of GOE that a scalar clock lacks are (i) a small negative shuffle
+deficit $\rr_{\rm obs}-\rr_{\rm shuf}<0$, from the sequential anti-correlation
+(rigidity) of a repulsive spectrum, and (ii) a number variance that grows
+logarithmically rather than linearly with interval length. Figure~\ref{fig:mech}b
+shows the shuffle deficit: renewal clocks of every CV give
+$\rr_{\rm obs}-\rr_{\rm shuf}\approx0$, while only the genuine GOE spectrum shows a
+resolved negative value.
+
+\paragraph{The resolution wall.} Crucially, that GOE signature is small
+($\approx-0.03$) and requires a long sequence to detect: the standard error of
+$\rr$ is $\approx\sigma_r/\sqrt{N}$ with $\sigma_r\approx0.27$, so resolving a
+$-0.03$ deficit at $2\sigma$ needs $N\gtrsim300$ intervals. Geochronological
+event sequences have tens. Below that, a scalar clock and a genuine GOE spectrum
+are observationally indistinguishable in $\rr$, and any GOE claim is unsupported
+regardless of the point value.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_mechanism.pdf}
+\caption{\textbf{(a)} A gamma renewal (charge-release) clock reproduces every
+$\rr$ value --- Poisson, GOE, GUE and beyond --- purely as a function of its
+interval coefficient of variation. \textbf{(b)} The discriminator: renewal clocks
+of any CV give a shuffle deficit $\rr_{\rm obs}-\rr_{\rm shuf}\approx0$; only a
+genuine GOE spectrum shows the resolved negative (rigidity) signature --- and even
+that needs $N\gtrsim300$ levels to detect.}
+\label{fig:mech}
+\end{figure}
+
+\section{Re-audit: orogenic-gold timing statistics}
+
+We re-analyse the orogenic-gold dataset of \citet{chen2026metallogeny}, which
+reported $\rr=0.678$ ($n=22$, ``best fit GUE'', Poisson excluded) and interpreted
+it as intrinsic charge-release level repulsion in a non-magmatic ore system. The
+analysis pipeline groups ages by deposit, forms the within-deposit spacings,
+normalises them by each deposit's mean spacing, and pools the normalised spacings
+across the ten deposits that have at least three dated ages.
+
+We reproduce $\rr=0.678$ exactly, and find four problems
+(Fig.~\ref{fig:real}).
+
+\paragraph{(i) It measures the wrong quantity.} Each pooled ``interval'' is the
+gap between two ages \emph{of the same deposit}, obtained from different
+geochronometers (U--Pb xenotime, monazite, Re--Os, Ar--Ar). The statistic
+therefore describes the scatter among dating methods on individual deposits, not
+the province-scale spacing of distinct mineralising pulses that the charge-release
+hypothesis is about. There is no province-scale temporal sequence in the
+construction, so ``level repulsion'' --- a property of a sequence --- does not even
+apply.
+
+\paragraph{(ii) It is a scalar clock.} The pooled intervals have CV~$=0.31$, and a
+zero-repulsion gamma renewal clock of CV~$=0.38$ reproduces $\rr=0.68$
+(Section~2). The reported value is the marginal CV re-encoded; no repulsion is
+present or required.
+
+\paragraph{(iii) Its apparent rigidity is a normalisation artifact.} The shuffle
+test gives $\rr_{\rm obs}-\rr_{\rm shuf}=-0.031$, superficially the GOE rigidity
+signature. But dividing each deposit's intervals by their own mean turns them into
+\emph{compositional} (closed) data: the normalised intervals of a deposit sum to a
+fixed value (their count, $\sum_i s_i=\text{const}$), and this closure
+algebraically forces a negative correlation between adjacent intervals. A pure
+zero-repulsion renewal clock pushed through the \emph{same}
+group-normalise-pool construction yields $\rr=0.69$ and a deficit of $-0.027$ ---
+reproducing both the value and the ``rigidity'' (Fig.~\ref{fig:real}b). The
+$-0.031$ is an artifact of the closure constraint, not spectral rigidity.
+
+\paragraph{(iv) It is unresolvable.} The ages carry $\pm4$--$6$~Myr
+uncertainties, comparable to the spacings. Jittering each age within its stated
+error and re-running the exact pipeline moves $\rr$ across
+$[0.39,0.67]$ --- the full Poisson-to-GUE range --- with the reported $0.678$
+sitting at the upper edge of the noise (Fig.~\ref{fig:real}a). The published
+bootstrap interval, which resamples intervals but ignores the age errors, is
+correspondingly overconfident.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{fig_realdata.pdf}
+\caption{\textbf{(a)} Re-running the exact pipeline with the ages jittered within
+their $\pm$error moves $\rr$ across the whole Poisson-to-GUE range; the reported
+$0.678$ is at the top edge. \textbf{(b)} A zero-repulsion scalar renewal clock
+(CV~$=0.38$) put through the same group-normalise-pool construction reproduces
+both the $\rr=0.68$ value and the $-0.03$ shuffle ``rigidity'': both are
+construction artifacts, not level repulsion.}
+\label{fig:real}
+\end{figure}
+
+\FloatBarrier
+\section{Restated organising principle}
+
+The four points are not a quirk of one dataset; they follow from the mechanism.
+We therefore restate the program's organising principle
+(Table~\ref{tab:principle}). A single isolated relaxation-oscillator source ---
+the charge-and-release archetype --- produces a \emph{scalar renewal clock}: a
+narrow interval distribution with high $\rr$ set by its CV, shuffle-invariant, and
+without spectral rigidity. This is \emph{not} GOE level repulsion. Genuine
+Wigner--Dyson statistics require a chaotic, strongly-mixed spectrum
+\citep{bohigas1984}, which a fluid reservoir does not possess. The
+superposition$\,\to\,$Poisson half of the principle is unaffected: pooling
+independent sources broadens the interval distribution toward exponential and
+drives $\rr\to0.386$, exactly as observed.
+
+\begin{table}[t]
+\centering
+\caption{The organising principle, corrected. The high-$\rr$ ``single-source''
+regime is a scalar clock, not level repulsion.}
+\label{tab:principle}
+{\small
+\begin{tabular}{lll}
+\toprule
+Configuration & Signature & Interpretation\\
+\midrule
+Single relaxation oscillator   & high $\rr$, CV-set, shuffle-invariant & scalar renewal clock (\emph{not} GOE)\\
+Chaotic / strongly-mixed spectrum & $\rr\!\approx\!0.53$, $\rr_{\rm obs}\!<\!\rr_{\rm shuf}$, rigid & GOE level repulsion\\
+Superposition of many sources  & $\rr\to0.386$ & Poisson\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+This restatement strengthens rather than weakens the wider program, because it
+places the ore-timing result in the same family as other correctly-diagnosed
+scalar clocks --- jökulhlaup charge-release and steric nucleosome renewal
+\citep{chen2026nucleosome} --- all of which show high, shuffle-invariant $\rr$ that
+is marginal, not sequential.
+
+\section{Implications for the audited studies}
+
+\paragraph{Metallogenic timing \citep{chen2026metallogeny}.} The central claim ---
+that single ore systems exhibit GOE/GUE level repulsion --- is not supported. The
+high $\rr$-values are scalar clocks (and, for orogenic gold, unresolvable given
+the age errors). What survives is the superposition result: pooling provinces
+drives $\rr$ to the Poisson value, a genuine and correctly-interpreted effect. A
+corrected version should drop the ``level repulsion'' interpretation and reframe
+the single-source signal as a narrow scalar clock, retaining the
+superposition$\,\to\,$Poisson contrast and the data compilation.
+
+\paragraph{Sigma vein spacing \citep{chen2026sigma}.} The spatial results of that
+study --- clustered, not stress-shadow-repulsive vein spacing, and the explicit
+demonstration that declustering fabricates GOE --- are sound and unaffected. Only
+its framing device, a ``time--space asymmetry'' contrasting temporal repulsion
+with spatial clustering, rests on the temporal claim audited here. With the
+temporal side reclassified as a scalar clock, the asymmetry should be restated as
+``temporal scalar clock plus spatial clustering'', and the spatial and
+methodological results stand on their own.
+
+\section{Conclusion}
+
+A narrow scalar (renewal) clock reproduces any value of the spacing ratio,
+including the GOE and GUE values, with no level repulsion; in short geochronologic
+sequences it is indistinguishable from a genuine repulsive spectrum, and age
+uncertainties widen $\rr$ across the whole Poisson-to-GUE range. A published claim
+of temporal GOE/GUE repulsion in ore systems is, on re-audit, a scalar clock
+measured on within-deposit geochronometer scatter and unresolvable given the age
+errors. The correct reading of a high, shuffle-invariant $\rr$ is a scalar clock,
+not level repulsion --- the necessary fourth control to accompany the no-decluster,
+de-seasonalise, and density-not-spacing rules of the companion note.
+
+\section*{Data and code availability}
+The orogenic-gold ages re-analysed here are from the dataset of
+\citet{chen2026metallogeny}; a copy and all analysis code are at
+\url{https://github.com/Ruqing1963/scalar-clock-not-goe} and archived on Zenodo
+(DOI assigned on release). All other demonstrations are synthetic.
+
+\begin{thebibliography}{99}
+
+\bibitem[Ata\c{s} et al.(2013)]{atas2013}
+Y.~Y. Ata\c{s}, E.~Bogomolny, O.~Giraud, and G.~Roux.
+Distribution of the ratio of consecutive level spacings in random matrix
+ensembles. \textit{Phys. Rev. Lett.} \textbf{110}, 084101 (2013).
+
+\bibitem[Berry \& Tabor(1977)]{berry1977}
+M.~V. Berry and M.~Tabor.
+Level clustering in the regular spectrum.
+\textit{Proc. R. Soc. Lond. A} \textbf{356}, 375--394 (1977).
+
+\bibitem[Bohigas et al.(1984)]{bohigas1984}
+O.~Bohigas, M.~J. Giannoni, and C.~Schmit.
+Characterization of chaotic quantum spectra and universality of level fluctuation
+laws. \textit{Phys. Rev. Lett.} \textbf{52}, 1--4 (1984).
+
+\bibitem[Chen(2026a)]{chen2026sigma}
+R.~Chen.
+Time--space asymmetry in orogenic gold systems: temporal level repulsion but
+spatial clustering of ore-stage veins at the Sigma deposit. Zenodo,
+\url{https://doi.org/10.5281/zenodo.20778697} (2026).
+
+\bibitem[Chen(2026b)]{chen2026metallogeny}
+R.~Chen.
+Charge-and-release rhythms in ore-forming systems: a random matrix theory test of
+metallogenic timing across four provinces. Zenodo,
+\url{https://doi.org/10.5281/zenodo.20768849} (2026).
+
+\bibitem[Chen(2026c)]{chen2026nucleosome}
+R.~Chen.
+The consecutive spacing-ratio of nucleosome arrays: high regularity from steric
+renewal, not level repulsion. Zenodo,
+\url{https://doi.org/10.5281/zenodo.20839558} (2026).
+
+\bibitem[Chen(2026d)]{chen2026spurious}
+R.~Chen.
+Spurious level repulsion in geophysical random-matrix analysis: declustering,
+seasonal gating, and the Wishart null. Zenodo,
+\url{https://doi.org/10.5281/zenodo.20883107} (2026).
+
+\bibitem[Oganesyan \& Huse(2007)]{oganesyan2007}
+V.~Oganesyan and D.~A. Huse.
+Localization of interacting fermions at high temperature.
+\textit{Phys. Rev. B} \textbf{75}, 155111 (2007).
+
+\end{thebibliography}
+
+\end{document}
