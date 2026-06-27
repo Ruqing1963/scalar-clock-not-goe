@@ -1,0 +1,33 @@
+deposit,age_ma,age_err,method,craton
+Golden Mile,2675.0,5.0,U-Pb,Yilgarn
+Golden Mile,2655.0,4.0,U-Pb,Yilgarn
+Golden Mile,2645.0,4.0,U-Pb,Yilgarn
+Golden Mile,2630.0,5.0,Ar-Ar,Yilgarn
+Jundee,2675.0,5.0,U-Pb,Yilgarn
+Jundee,2670.0,4.0,U-Pb,Yilgarn
+Jundee,2655.0,5.0,U-Pb,Yilgarn
+Agnew,2680.0,5.0,U-Pb,Yilgarn
+Agnew,2660.0,4.0,U-Pb,Yilgarn
+Agnew,2640.0,5.0,Ar-Ar,Yilgarn
+Malartic-VdO,2680.0,5.0,U-Pb,Abitibi
+Malartic-VdO,2660.0,4.0,U-Pb,Abitibi
+Malartic-VdO,2643.0,5.0,U-Pb,Abitibi
+Malartic-VdO,2620.0,6.0,Re-Os,Abitibi
+Timmins,2672.0,4.0,U-Pb,Abitibi
+Timmins,2665.0,4.0,U-Pb,Abitibi
+Timmins,2655.0,5.0,Ar-Ar,Abitibi
+Garrison,2678.0,2.0,U-Pb,Abitibi
+Garrison,2670.0,3.0,U-Pb,Abitibi
+Garrison,2657.0,15.0,U-Pb,Abitibi
+Geraldton,2690.0,5.0,U-Pb,Abitibi
+Geraldton,2680.0,4.0,U-Pb,Abitibi
+Geraldton,2670.0,5.0,Ar-Ar,Abitibi
+Obuasi,2150.0,8.0,U-Pb,WAfrica
+Obuasi,2100.0,10.0,Ar-Ar,WAfrica
+Obuasi,2063.0,9.0,U-Pb,WAfrica
+Ashanti,2135.0,8.0,U-Pb,WAfrica
+Ashanti,2105.0,10.0,Ar-Ar,WAfrica
+Ashanti,2086.0,9.0,Re-Os,WAfrica
+Sukhoi Log,447.0,6.0,Re-Os,Siberia
+Sukhoi Log,321.0,14.0,Ar-Ar,Siberia
+Sukhoi Log,300.0,10.0,U-Pb,Siberia
